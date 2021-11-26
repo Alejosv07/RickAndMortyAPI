@@ -1,0 +1,201 @@
+:root{
+    --primary: #a9eee6;
+    --primaryA: #a9eee680;
+    --second: #fefaec;
+    --secondA: #fefaec80;
+    --third: #f38181;
+    --thirdA: #f3818180;
+    --last: #625772;
+    --lastA: #62577280;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondA);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,179,213,1) 42%, rgba(183,191,99,1) 100%);
+}
+
+/*
+    #############################################
+                    Styles general
+    #############################################
+ */
+.link{
+    cursor: pointer;
+    color: #11B3D5;
+    text-decoration: none;
+}
+
+.link:visited{
+    color: #11B3D5;
+}
+
+
+.cargando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+/*
+#############################################
+Styles header
+#############################################
+*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 4em;
+    background-color: black;
+    border-end-end-radius: 8px;
+    border-end-start-radius: 8px;
+    margin-bottom: 8em;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    cursor: pointer;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #11B3D5;
+    text-shadow: -0.5px -0.5px #B7BF63, 0.5px 0.5px #B7BF63;
+}
+
+.header>.ul{
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    color: white;
+}
+
+.link.link--nav:visited,
+.link.link--nav{
+    color: white;
+}
+
+/*
+#############################################
+        Styles container card character
+#############################################
+*/
+
+.cards--characters{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    padding: 0 3em;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+
+.section__title{
+    color: white;
+    padding: 6em;
+    background-image: url("https://media.giphy.com/media/l41JU9pUyosHzWyuQ/giphy.gif"),
+    url("https://media.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif"),
+    url("https://media.giphy.com/media/oYMxbPiBVlVII/giphy.gif");
+    background-position: left,center,right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 33.3%;
+    padding-left: 2em;
+    margin-bottom: 2em;
+}
+/*
+    #############################################
+                Styles card character
+    #############################################
+ */
+.cardCharacter
+{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+}
+.cardCharacter:hover
+{
+    transform: scale(0.9);
+    background-color: #000000;
+    outline: 8px solid #11B3D5;
+    transition: transform 1s;
+}
+.cardCharacter:hover>.cardCharacter__body>.cardCharacter__txt>span
+{
+    color: white;
+}
+
+.cardCharacter__header{
+    display: flex;
+    align-items: stretch;
+}
+.cardCharacter__header>img{
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cardCharacter__body__title{
+    margin-bottom: 3rem;
+}
+
+.cardCharacter__body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 0.5em;
+}
+
+
+.cardCharacter__txt{
+    color: #8e8e8e;
+}
+.cardCharacter__txt>span{
+    color: black;
+}
+
+/*
+    #############################################
+                Styles pagination card
+    #############################################
+ */
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 5rem;
+    list-style: none;
+}
+
+.btn--pagination{
+    cursor: pointer;
+    padding: 0.5em;
+    background-color: white;
+    border: 1px solid #8e8e8e;
+    border-radius: 8px;
+}
+
+.btn--pagination:hover{
+    background-color: black;
+    color: white;
+    transition: all 1.5s;
+}
+
+.footer{
+    padding: 0.5em;
+    background-color: black;
+}
