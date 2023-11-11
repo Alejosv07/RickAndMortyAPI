@@ -4,7 +4,7 @@
 ![Img Rick and morty](/Prev2.png)
 ![Img Rick and morty](/Prev3.png)
 
-**This project only contains**
+**This project only contain**
 <ol>
   <li>HTML</li>
   <li>CSS</li>
